@@ -1,11 +1,18 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
+  min-height: 100vh;
 }
 
+footer{
+  background-color:#D4AF37 ;
+  color:white ;
+  padding: 10;
+  text-align: center;
+}
 
 
 h2, p {
@@ -61,4 +68,22 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+#progressContainer {
+	position: absolute;
+	left:2%;
+	bottom: 3%;
+	width: 95%;
+	border-radius: 25px;
+	height: 10px;
+	margin-top: 10px;
+	background-color: #eeeeee;
+}
+
+#progressBar {
+	width: 0%;
+	height: 100%;
+	border-radius: 25px;
+	background-color: #007bff;
 }
