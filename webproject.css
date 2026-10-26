@@ -5,6 +5,7 @@ body {
   font-weight: 400;
   font-style: normal;
   min-height: 100vh;
+  font-size: 16px;
 }
 
 footer{
@@ -14,8 +15,40 @@ footer{
   text-align: center;
 }
 
-.main{
-  min-height: 100vh;
+#title{
+  position: absolute;
+  display: flex;
+  right: 1000px;
+  justify-content: center;
+  align-items: center;
+  width:25em;
+  font-size: 60px;
+  height: 100px;
+}
+
+#xia{
+  padding: 5%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  
+  width:70em;
+  font-size: 30px;
+}
+
+#summaryxia{
+  position: relative;
+  left: 10%;
+  top: 100px;
+  line-break: auto;
+}
+
+#xiaemp{
+  position: relative;
+  bottom: 10px;
+
 }
 
 figure.hero{
@@ -81,20 +114,3 @@ li.dropdown {
   display: block;
 }
 
-#progressContainer {
-	position: absolute;
-	left:2%;
-	bottom: 3%;
-	width: 95%;
-	border-radius: 25px;
-	height: 10px;
-	margin-top: 10px;
-	background-color: #eeeeee;
-}
-
-#progressBar {
-	width: 0%;
-	height: 100%;
-	border-radius: 25px;
-	background-color: #007bff;
-}
