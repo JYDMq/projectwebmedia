@@ -1,12 +1,18 @@
 body {
-  margin: 10;
-  padding: 10;
-  font-family: "Bebas Neue", sans-serif;
+  margin: 0;
+  /*padding: 10;*/
+  font-family: sans-serif;
   font-weight: 400;
   font-style: normal;
-  min-height: 900vh;
+  /*min-height: 900vh;*/
   font-size: 16px;
 }
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: "Bebas Neue", sans-serif;
+ margin-bottom: 0.25em;
+}
+
 
 footer{
   background-color:#D4AF37 ;
@@ -14,34 +20,78 @@ footer{
   padding: 10;
   text-align: center;
 }
+header {
+    background-color: #D4AF37;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+header > nav {
+  width: 1200px;
+  margin: auto;
+}
+
+
+main {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: auto;
+  /*border: 2px dashed red;*/
+}
+
+#xiaContent {
+  /* TO ADD STYLES */
+  grid-column: 1;
+  /*background-color: #ffcc66;*/
+  grid-row: 1;
+  padding: 20px;
+}
+
+#xiaImage {
+  grid-column: 2;
+  grid-row: 1;
+  /*background-color: red;*/
+  margin: 0px;
+  position: sticky;
+  top: 80px;
+}
+
+#xiaImage img {
+  max-width: 100%;
+}
 
 #title{
-  position: absolute;
+  /*position: absolute;*/
   display: flex;
-  right: 1000px;
+  /*right: 1000px;*/
   justify-content: center;
   align-items: center;
-  width:25em;
+  /*width:25em;*/
   font-size: 60px;
-  height: 100px;
+  font-weight: 400;
+  /*height: 100px;*/
 }
 
 #xia{
-  padding: 5%;
+  /*padding: 5%;*/
   
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-weight: 700;
   
-  width:70em;
-  font-size: 30px;
+  /*width:70em;*/
+  /*font-size: 30px;*/
 }
 
 #summaryxia{
   position: relative;
-  left: 10%;
-  top: 100px;
+  /*left: 10%;*/
+  /*top: 100px;*/
   line-break: auto;
 }
 
@@ -60,7 +110,7 @@ figure.hero{
 }
 
 h2, p {
-  margin: 10px;
+  /*margin: 10px;*/
 }
 
 ul {
@@ -68,7 +118,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #D4AF37;
+
 }
 
 li {
