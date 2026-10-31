@@ -1,10 +1,13 @@
 $(document).ready(function() {
-$('#txt1').hide();
-$('#txt2').hide();
-$('#txt3').hide();
-$('#txt4').hide();
-$('#txt5').hide();
-$('#pause').hide();
+$('#summaryxia').hide();
+
+$(window).scroll(function () { 
+    if ($(this).scrollTop() > 240 && $(this).scrollTop() < 1250) {
+        $('#summaryxia').fadeIn();
+    } else{
+        $('#summaryxia').fadeOut();
+    }
+});
 
 
 });
