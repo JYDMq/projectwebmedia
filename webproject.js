@@ -1,11 +1,31 @@
 $(document).ready(function() {
-$('#summaryxia').hide();
+$('#xiaContent').hide();
+$('#xiaImageHolder').hide();
+$('#xiaImageTwo').hide();
+$('#xiaImageThree').hide();
+$('#xiaImageFour').hide();
+
+$('#ImageHolderTwo').hide();
+$('#PartTwo').hide();
+$('#ImageHolderThree').hide();
+$('#PartThree').hide();
+$('#ImageHolderFour').hide();
+$('#PartFour').hide();
+$('#ImageHolderFive').hide();
+$('#PartFive').hide();
+$('#ImageHolderSix').hide();
+$('#PartSix').hide();
+$('#ImageHolderSeven').hide();
+$('#PartSeven').hide();
+
 
 $(window).scroll(function () { 
-    if ($(this).scrollTop() > 240 && $(this).scrollTop() < 1250) {
-        $('#summaryxia').fadeIn();
+    if ($(this).scrollTop() > 40 && $(this).scrollTop() < 1250) {
+        $('#xiaContent').fadeIn();
+        $('#xiaImageHolder').fadeIn();
     } else{
-        $('#summaryxia').fadeOut();
+        $('#xiaContent').fadeOut();
+        $('#xiaImageHolder').fadeOut();
     }
 });
 
