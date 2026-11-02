@@ -1,33 +1,31 @@
-$(document).ready(function() {
-$('#xiaContent').hide();
-$('#xiaImageHolder').hide();
-$('#xiaImageTwo').hide();
-$('#xiaImageThree').hide();
-$('#xiaImageFour').hide();
-
-$('#ImageHolderTwo').hide();
-$('#PartTwo').hide();
-$('#ImageHolderThree').hide();
-$('#PartThree').hide();
-$('#ImageHolderFour').hide();
-$('#PartFour').hide();
-$('#ImageHolderFive').hide();
-$('#PartFive').hide();
-$('#ImageHolderSix').hide();
-$('#PartSix').hide();
-$('#ImageHolderSeven').hide();
-$('#PartSeven').hide();
-
+$(function() {
+$('.section').hide();
+$('.ImageHolder').hide();
 
 $(window).scroll(function () { 
-    if ($(this).scrollTop() > 40 && $(this).scrollTop() < 1250) {
+    if ($(this).scrollTop() > 40 && $(this).scrollTop() < 400) {
         $('#xiaContent').fadeIn();
         $('#xiaImageHolder').fadeIn();
-    } else{
-        $('#xiaContent').fadeOut();
-        $('#xiaImageHolder').fadeOut();
+    }else if($(this).scrollTop() > 400 && $(this).scrollTop() < 600){
+        $('#PartTwo').fadeIn();
+        $('#ImageHolderTwo').fadeIn();
+    }else if($(this).scrollTop() > 600 && $(this).scrollTop() < 800){
+        $('#PartThree').fadeIn();
+        $('#ImageHolderThree').fadeIn();
+    }else if($(this).scrollTop() > 800 && $(this).scrollTop() < 1000){
+        $('#PartFour').fadeIn();
+        $('#ImageHolderFour').fadeIn();
+    }else if($(this).scrollTop() > 1000 && $(this).scrollTop() < 1200){
+        $('#PartFive').fadeIn();
+        $('#ImageHolderFive').fadeIn();
+    }else{
+        $('.section').fadeOut();
+        $('.ImageHolder').fadeOut();
+        
     }
 });
+
+
 
 
 });
