@@ -9,13 +9,13 @@ $(window).scroll(function () {
     }else if($(this).scrollTop() > 400 && $(this).scrollTop() < 600){
         $('#PartTwo').fadeIn();
         $('#ImageHolderTwo').fadeIn();
-    }else if($(this).scrollTop() > 600 && $(this).scrollTop() < 800){
+    }else if($(this).scrollTop() > 500 && $(this).scrollTop() < 800){
         $('#PartThree').fadeIn();
         $('#ImageHolderThree').fadeIn();
-    }else if($(this).scrollTop() > 800 && $(this).scrollTop() < 1000){
+    }else if($(this).scrollTop() > 700 && $(this).scrollTop() < 1000){
         $('#PartFour').fadeIn();
         $('#ImageHolderFour').fadeIn();
-    }else if($(this).scrollTop() > 1000 && $(this).scrollTop() < 1200){
+    }else if($(this).scrollTop() > 900 && $(this).scrollTop() < 1200){
         $('#PartFive').fadeIn();
         $('#ImageHolderFive').fadeIn();
     }else{
@@ -24,6 +24,15 @@ $(window).scroll(function () {
         
     }
 });
+
+ $("#xiaPortrait").on({
+    mouseenter: function(){ 
+     $("#a").slideDown('fast');
+    },
+    mouseleave: function(){ 
+     $("#a").slideUp('fast');
+    }
+    });
 
 
 
