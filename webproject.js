@@ -46,6 +46,70 @@ $(window).scroll(function () {
     }
     });
 
+     $("#tang").on({
+    mouseenter: function(){ 
+     $("#c").slideDown('fast');
+    },
+    mouseleave: function(){ 
+     $("#c").slideUp('fast');
+    }
+    });
+
+ $("#dixin").on({
+    mouseenter: function(){ 
+     $("#d").slideDown('fast');
+    },
+    mouseleave: function(){ 
+     $("#d").slideUp('fast');
+    }
+    });
+
+$("#wu").on({
+    mouseenter: function(){ 
+     $("#e").slideDown('fast');
+    },
+    mouseleave: function(){ 
+     $("#e").slideUp('fast');
+    }
+    });
+
+$("#you").on({
+    mouseenter: function(){ 
+     $("#f").slideDown('fast');
+    },
+    mouseleave: function(){ 
+     $("#f").slideUp('fast');
+    }
+    });
+
+$("#gou").on({
+    mouseenter: function(){ 
+     $("#g").slideDown('fast');
+    },
+    mouseleave: function(){ 
+     $("#g").slideUp('fast');
+    }
+    });
+
+$("#fu").on({
+    mouseenter: function(){ 
+     $("#h").slideDown('fast');
+    },
+    mouseleave: function(){ 
+     $("#h").slideUp('fast');
+    }
+    });
+
+$("#ying").on({
+    mouseenter: function(){ 
+     $("#i").slideDown('fast');
+    },
+    mouseleave: function(){ 
+     $("#i").slideUp('fast');
+    }
+    });
+
+
 
 
 
