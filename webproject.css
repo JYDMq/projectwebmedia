@@ -52,6 +52,7 @@ main {
   /* TO ADD STYLES */
   grid-column: 1;
   grid-row: 1;
+  transition: opacity 0.25s;
   /*background-color: #ffcc66;*/
   
    .container{
@@ -75,14 +76,22 @@ main {
       position: relative;
       bottom: 10px;
 
+     
+
     }
   }
 
 }
-
+ .portrait{
+        max-width: 250px;
+        max-height: 250px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+}
+  
 #ImageHolder {
   grid-column: 2;
-  grid-row: 1;
+  transition: opacity 0.25s;
   /*background-color: red;*/
   margin: 0px;
   position: sticky;
@@ -91,6 +100,7 @@ main {
    max-width: 100%;
   }
 }
+
 
 
 

@@ -1,36 +1,48 @@
 $(function() {
-$('.section').hide();
-$('.ImageHolder').hide();
+//$('.section').hide();
+$('.section').css({opacity:0});
+$('.ImageHolder').css({opacity:0});
+$(".panel").hide();
+//$('.ImageHolder').hide();
 
 $(window).scroll(function () { 
-    if ($(this).scrollTop() > 40 && $(this).scrollTop() < 400) {
-        $('#xiaContent').fadeIn();
-        $('#xiaImageHolder').fadeIn();
-    }else if($(this).scrollTop() > 400 && $(this).scrollTop() < 600){
-        $('#PartTwo').fadeIn();
-        $('#ImageHolderTwo').fadeIn();
-    }else if($(this).scrollTop() > 500 && $(this).scrollTop() < 800){
-        $('#PartThree').fadeIn();
-        $('#ImageHolderThree').fadeIn();
-    }else if($(this).scrollTop() > 700 && $(this).scrollTop() < 1000){
-        $('#PartFour').fadeIn();
-        $('#ImageHolderFour').fadeIn();
-    }else if($(this).scrollTop() > 900 && $(this).scrollTop() < 1200){
-        $('#PartFive').fadeIn();
-        $('#ImageHolderFive').fadeIn();
+    if ($(this).scrollTop() > 0 && $(this).scrollTop() < 600) {
+        $('#xiaContent').stop().animate({opacity:1 },1000);
+        $('#xiaImageHolder').stop().animate({opacity:1 },1000);
+    }else if($(this).scrollTop() > 500 && $(this).scrollTop() < 1200){
+        $('#PartTwo').stop().animate({opacity:1 },1000);
+        $('#ImageHolderTwo').stop().animate({opacity:1 },1000);
+    }else if($(this).scrollTop() > 1100 && $(this).scrollTop() < 1800){
+        $('#PartThree').stop().animate({opacity:1 },1000);
+        $('#ImageHolderThree').stop().animate({opacity:1 },1000);
+    }else if($(this).scrollTop() > 1700 && $(this).scrollTop() < 2400){
+        $('#PartFour').stop().animate({opacity:1 },1000);
+        $('#ImageHolderFour').stop().animate({opacity:1 },1000);
+    }else if($(this).scrollTop() > 2300 && $(this).scrollTop() < 12000){
+        $('#PartFive').stop().animate({opacity:1 },1000);
+        $('#ImageHolderFive').stop().animate({opacity:1 },1000);
     }else{
-        $('.section').fadeOut();
-        $('.ImageHolder').fadeOut();
+        $('.section').stop().animate({opacity:0},1000);
+        $('.ImageHolder').stop().animate({opacity:0 },1000);
         
     }
 });
 
- $("#xiaPortrait").on({
+ $("#yu").on({
     mouseenter: function(){ 
      $("#a").slideDown('fast');
     },
     mouseleave: function(){ 
      $("#a").slideUp('fast');
+    }
+    });
+
+ $("#jie").on({
+    mouseenter: function(){ 
+     $("#b").slideDown('fast');
+    },
+    mouseleave: function(){ 
+     $("#b").slideUp('fast');
     }
     });
 
