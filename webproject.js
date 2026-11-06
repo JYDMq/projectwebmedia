@@ -1,12 +1,12 @@
 $(function() {
-//$('.section').hide();
+//originall .hide now using opacity this is used to slowly reveal the article
 $('.section').css({opacity:0});
 $('.ImageHolder').css({opacity:0});
 $(".panel").hide();
-//$('.ImageHolder').hide();
+
 
 $(window).scroll(function () { 
-    if ($(this).scrollTop() > 0 && $(this).scrollTop() < 600) {
+    if ($(this).scrollTop() > 1 && $(this).scrollTop() < 600) {
         $('#xiaContent').stop().animate({opacity:1 },1000);
         $('#xiaImageHolder').stop().animate({opacity:1 },1000);
     }else if($(this).scrollTop() > 500 && $(this).scrollTop() < 1200){
@@ -27,7 +27,7 @@ $(window).scroll(function () {
         
     }
 });
-
+// this is use for panel transition
  $("#yu").on({
     mouseenter: function(){ 
      $("#a").slideDown('fast');
